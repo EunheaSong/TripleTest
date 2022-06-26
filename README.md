@@ -64,6 +64,7 @@ Timestamped를 상속 받게 하여 등록시간을 기록합니다.
 
 ### POST /events
 EventDto형태로 데이터를 담아서 /events 로 POST 요청이 오면, action값을 확인하여 각각 리뷰 등록, 수정, 삭제에 대한 로직이 실행됩니다.
+정해진 액션(ADD , MOD, DELETE)가 아닐 경우 예외를 발생합니다.
 
 * 리뷰 등록시
   * 입력받은 place의 reviewList가 비어있는지 확인하고 , 비어있으면 리뷰 첫 등록 보너스를 부여합니다. 
